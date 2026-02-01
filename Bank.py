@@ -1,4 +1,4 @@
-# Simple Bank System
+# Jash Bank !
 class BankAccount:
 	def __init__(self, owner, balance=0):
 		self.owner = owner
@@ -24,7 +24,7 @@ class BankAccount:
 		print(f"Current balance: ₹{self.balance}")
 
 def main():
-	print("Welcome to the Simple Bank System!")
+	print("Welcome to the Jash Bank!")
 	name = input("Enter your name to create an account: ")
 	account = BankAccount(name)
 
@@ -51,7 +51,7 @@ def main():
 		elif choice == '3':
 			account.check_balance()
 		elif choice == '4':
-			print("Thank you for using the Simple Bank System. Goodbye!")
+			print("Thank you for using the Jash Bank !. Goodbye!")
 			break
 		else:
 			print("Invalid choice. Please select 1-4.")
