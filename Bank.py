@@ -7,7 +7,7 @@ class BankAccount:
 	def deposit(self, amount):
 		if amount > 0:
 			self.balance += amount
-			print(f"Deposited ${amount}. New balance: ${self.balance}")
+			print(f"Deposited ₹{amount}. New balance: ₹{self.balance}")
 		else:
 			print("Deposit amount must be positive.")
 
@@ -18,11 +18,10 @@ class BankAccount:
 			print("Withdrawal amount must be positive.")
 		else:
 			self.balance -= amount
-			print(f"Withdrew ${amount}. New balance: ${self.balance}")
+			print(f"Withdrew ₹{amount}. New balance: ₹{self.balance}")
 
 	def check_balance(self):
-		print(f"Current balance: ${self.balance}")
-
+		print(f"Current balance: ₹{self.balance}")
 
 def main():
 	print("Welcome to the Simple Bank System!")
